@@ -1,18 +1,18 @@
 class Stack<T> {
-  #_stack: T[] = [];
+  #stack: T[] = [];
 
   push(item: T): void {
-    this.#_stack.push(item);
+    this.#stack.push(item);
   }
 
   pop(): T | undefined {
-    const item = this.#_stack.pop();
+    const item = this.#stack.pop();
     return item;
   }
   peek(): T | undefined {
-    return this.#_stack.at(-1);
+    return this.#stack.at(-1);
   }
   isEmpty(): boolean {
-    return this.#_stack.length === 0;
+    return this.#stack.length === 0;
   }
 }
